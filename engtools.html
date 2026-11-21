@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Engineering Tools | DevTools </title>
+    <!-- style.css first (shared look), engtools.css second (page extras) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+     <nav class="navbar">
+        <span class="logo">Dev<span class="accent">Tools</span></span>
+         <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="devtoolsv.html#about">About</a>
+        <a href="devtoolsv.html#contact">Contact</a>
+        <a href="devtoolsv.html">CS Tools</a>
+        <a href="engtools.html" class="active">Engineering Tools</a>
+         </div>
+     </nav>
+    </header>
+
+<h1> Engineering Tools </h1>
+<h2> Design, simulate and build </h2>
+<p class="about"> Essential software for circuits, electronics, mechanical design and numerical computing. Each tool has a short description, the official download link and step-by-step setup instructions for Windows.</p>
+
+<p class="note"> Installers and website layouts change over time. If a button or menu name differs slightly from what is written here, look for the closest match on your screen. </p>
+
+<ul id="et">
+    <li>
+        <a href="#matlab"> MATLAB </a>
+        <svg viewBox="0 0 128 128"><path d="M8 100 L48 30 L64 58 L80 44 L120 100 L96 100 L80 72 L64 86 L48 60 L32 100 Z"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> The standard environment for engineering maths, data analysis, signal processing and control systems, with Simulink for block-diagram simulation. </span></p></span>
+    </li>
+    <li>
+        <a href="#octave"> GNU Octave </a>
+        <svg viewBox="0 0 128 128"><path fill-rule="evenodd" d="M64 10a54 54 0 1 0 0 108 54 54 0 0 0 0-108zm0 24a30 30 0 1 1 0 60 30 30 0 0 1 0-60z"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> A free, open-source alternative to MATLAB. Most basic MATLAB code runs in it unchanged, which makes it perfect if you have no licence. </span></p></span>
+    </li>
+    <li>
+        <a href="#kicad"> KiCad </a>
+        <svg viewBox="0 0 128 128"><path d="M20 20h88v12H20zM20 58h50v12H20zM20 96h88v12H20zM88 54l20 16-20 16z"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> Free electronics design software. Draw circuit schematics, lay out printed circuit boards (PCBs) and preview them in 3D. </span></p></span>
+    </li>
+    <li>
+        <a href="#ltspice"> LTspice </a>
+        <svg viewBox="0 0 128 128"><path d="M4 70h28l10-40 16 70 14-60 10 30h42v-8H88L82 42 66 108 52 38 44 70H4z"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> A free circuit simulator. Test a circuit and see its voltages and currents on a graph before you build anything physical. </span></p></span>
+    </li>
+    <li>
+        <a href="#arduino"> Arduino IDE </a>
+        <svg viewBox="0 0 128 128"><path fill-rule="evenodd" d="M34 34a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm0 14a16 16 0 1 1 0 32 16 16 0 0 1 0-32zM94 34a30 30 0 1 0 0 60 30 30 0 0 0 0-60zm0 14a16 16 0 1 1 0 32 16 16 0 0 1 0-32zM26 60h16v8H26zM86 60h16v8H86zM90 56h8v16h-8z"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> Write code and upload it to Arduino boards. The easiest way to start with microcontrollers, sensors and small robotics projects. </span></p></span>
+    </li>
+    <li>
+        <a href="#fusion"> Fusion (Autodesk) </a>
+        <svg viewBox="0 0 128 128"><path d="M64 8 112 36V92L64 120 16 92V36zM64 30 34 47V81L64 98 94 81V47z" fill-rule="evenodd"></path></svg>
+        <span class="cardtext"><p><span class="card-desc"> 3D CAD for mechanical design. Model parts, assemble them and prepare them for 3D printing. Free education access is available to students. </span></p></span>
+    </li>
+</ul>
+
+<section id="matlab">
+    <h1> 1. MATLAB </h1>
+    <p> MATLAB is a numerical computing environment used across all engineering fields for matrix maths, plotting, signal processing, control design and simulation. Simulink, its add-on, lets you build and simulate systems with blocks.</p>
+    <p class="meta"><span class="chip">Paid / licence needed</span><span class="chip">Windows</span><span class="chip">Large download</span></p>
+    <p> Check first whether your university provides a MATLAB licence. If it does, install with your university email. If not, MathWorks offers student and trial options, or you can use GNU Octave below.</p>
+    <p><a href="https://www.mathworks.com/downloads/" target="_blank" rel="noopener">MATLAB Download</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on MATLAB Download above. </li>
+        <li> Click Sign in, or create a MathWorks account using your university email address. </li>
+        <li> Link your account to a licence (campus licence, student licence or trial) when MathWorks asks. </li>
+        <li> Download the Windows installer and open it from your downloads folder. </li>
+        <li> Sign in to your MathWorks account inside the installer and accept the licence agreement. Click Next. </li>
+        <li> Select the licence you want to use. Click Next. </li>
+        <li> Keep the default installation folder. Click Next. </li>
+        <li> Choose products. Keep MATLAB ticked, add Simulink, and tick only the toolboxes you need. You can always add more later. </li>
+        <li> Click Install and wait. This can take a long time because the files are several gigabytes. </li>
+        <li> When it finishes, click Finish and open MATLAB from the Start Menu. </li>
+        <li> To verify: in the Command Window type <code>version</code> and press Enter. A version number means it works. </li>
+        <li> Try your first line: <code>x = 0:0.1:10; plot(x, sin(x))</code> </li>
+    </ol>
+</section>
+
+<section id="octave">
+    <h1> 2. GNU Octave </h1>
+    <p> GNU Octave is a free numerical computing tool with a MATLAB-compatible language. It is ideal for practising matrix operations, plotting and simple simulations without paying for a licence.</p>
+    <p class="meta"><span class="chip free">Free</span><span class="chip">Windows</span></p>
+    <p><a href="https://octave.org/download" target="_blank" rel="noopener">Octave Download</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on Octave Download above. </li>
+        <li> Under Windows, choose the installer (.exe) for 64-bit Windows. </li>
+        <li> Open the downloaded file and click 'Yes' if Windows asks for permission. </li>
+        <li> Accept the licence, keep the default options and install location. Click Next, then Install. </li>
+        <li> Click Finish and open Octave from the Start Menu. </li>
+        <li> To verify: type <code>version</code> in the Command Window and press Enter. </li>
+    </ol>
+</section>
+
+<section id="kicad">
+    <h1> 3. KiCad </h1>
+    <p> KiCad is a free, open-source suite for electronics design. It includes a schematic editor to draw circuits, a PCB editor to design boards, and a 3D viewer to see the finished board.</p>
+    <p class="meta"><span class="chip free">Free</span><span class="chip">Windows</span></p>
+    <p><a href="https://www.kicad.org/download/windows/" target="_blank" rel="noopener">KiCad Download</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on KiCad Download above. </li>
+        <li> Choose the latest stable Windows (64-bit) installer from one of the download mirrors. </li>
+        <li> Open the installer from your downloads folder and click 'Yes' when Windows asks for permission. </li>
+        <li> Keep the default components and install location. Click Next, then Install. </li>
+        <li> Wait for the installation to complete, then click Finish. </li>
+        <li> Open KiCad from the Start Menu. If it asks about library tables or settings on first run, accept the defaults. </li>
+        <li> Create your first project: File, then New Project, and name it. </li>
+        <li> Double-click the schematic file (.kicad_sch) to open the Schematic Editor. Press <code>A</code> to add a component. </li>
+        <li> Open the PCB Editor from the project window when you are ready to lay out a board. </li>
+    </ol>
+</section>
+
+<section id="ltspice">
+    <h1> 4. LTspice </h1>
+    <p> LTspice is a free, fast circuit simulator from Analog Devices. You draw a circuit, run a simulation and view waveforms for voltage and current, which is great for checking designs before building them.</p>
+    <p class="meta"><span class="chip free">Free</span><span class="chip">Windows</span></p>
+    <p><a href="https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html" target="_blank" rel="noopener">LTspice Download</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on LTspice Download above. </li>
+        <li> Scroll to the Downloads section and choose the Windows version. </li>
+        <li> Open the downloaded installer and accept the licence agreement. </li>
+        <li> Keep the default options and install location, then finish the installation. </li>
+        <li> Open LTspice from the Start Menu. </li>
+        <li> Start a circuit: File, then New Schematic. </li>
+        <li> Press <code>F2</code> to place components such as a voltage source, resistor and capacitor, then wire them up. </li>
+        <li> Set the simulation type under Simulate, then Configure Analysis (for example Transient). </li>
+        <li> Click Run (the running-man icon), then click on a wire in the circuit to plot its voltage. </li>
+    </ol>
+</section>
+
+<section id="arduino">
+    <h1> 5. Arduino IDE </h1>
+    <p> The Arduino IDE is where you write programs (called sketches) and upload them to Arduino boards. It is the most beginner-friendly route into electronics, sensors, motors and embedded systems.</p>
+    <p class="meta"><span class="chip free">Free</span><span class="chip">Windows</span></p>
+    <p><a href="https://www.arduino.cc/en/software/" target="_blank" rel="noopener">Arduino IDE Download</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on Arduino IDE Download above. </li>
+        <li> Download the Windows installer for Arduino IDE 2.x. You may skip the donation prompt. </li>
+        <li> Open the installer, accept the licence and keep the default options. Click Install. </li>
+        <li> If Windows asks to install device drivers, click Install. These let your computer talk to the board. </li>
+        <li> Open the Arduino IDE and connect your board with a USB cable. </li>
+        <li> Go to Tools, then Board, and select your board (for example Arduino Uno). </li>
+        <li> Go to Tools, then Port, and select the port your board is connected to. </li>
+        <li> Open File, then Examples, then 01.Basics, then Blink. </li>
+        <li> Click the Upload arrow. When the small LED on the board starts blinking, your setup works. </li>
+    </ol>
+</section>
+
+<section id="fusion">
+    <h1> 6. Fusion (Autodesk) </h1>
+    <p> Fusion is a cloud-connected 3D CAD tool for mechanical design. You sketch, model parts, build assemblies and export files for 3D printing or manufacturing. Autodesk offers free education access to eligible students.</p>
+    <p class="meta"><span class="chip">Free for students</span><span class="chip">Windows</span></p>
+    <p><a href="https://www.autodesk.com/education/edu-software/overview" target="_blank" rel="noopener">Autodesk Education</a></p>
+    <p class="setup"> Set-Up Instructions </p>
+    <ol class="steps">
+        <li> Tap on Autodesk Education above. </li>
+        <li> Create an Autodesk account, or sign in if you already have one. </li>
+        <li> Verify that you are a student when asked. Use your university email where possible. </li>
+        <li> Find Fusion in the list of education software and click Get started. </li>
+        <li> Download the installer and open it from your downloads folder. </li>
+        <li> Sign in to your Autodesk account when the installer asks, and let it finish. This takes a few minutes. </li>
+        <li> Open Fusion from the Start Menu. </li>
+        <li> Start a first model: click Create Sketch, draw a rectangle, finish the sketch, then use Extrude to make it 3D. </li>
+    </ol>
+</section>
+
+<footer> 2026 DevTools. All rights Reserved. </footer>
+
+</body>
+</html>
